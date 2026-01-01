@@ -25,32 +25,32 @@ const RegisterUser = () => {
   
    
     if (!name.trim() || !email.trim() || !password.trim() || !confirmPassword.trim()) {
-      setError("Please fill all fields");
+      alert("Please fill all fields");
       return;
     }
   
     
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
-      setError("Invalid email format");
+      alert("Invalid email format");
       return;
     }
   
     
     if (password.length < 6) {
-      setError("Password must be at least 6 characters");
+      alert("Password must be at least 6 characters");
       return;
     }
   
     
     if (password !== confirmPassword) {
-      setError("Passwords do not match");
+      alert("Passwords do not match");
       return;
     }
   
     
     if (!role) {
-      setError("Please select a role");
+      alert("Please select a role");
       return;
     }
   

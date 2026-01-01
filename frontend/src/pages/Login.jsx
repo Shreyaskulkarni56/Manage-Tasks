@@ -16,17 +16,17 @@ const Login = () => {
   
     // 🔴 MANUAL REQUIRED VALIDATION
     if (!email.trim() && !password.trim()) {
-      setError("Please fill all fields");
+      alert("Please fill all fields");
       return;
     }
   
     if (!email.trim()) {
-      setError("Please fill email");
+      alert("Please fill email");
       return;
     }
   
     if (!password.trim()) {
-      setError("Please fill password");
+      alert("Please fill password");
       return;
     }
   
