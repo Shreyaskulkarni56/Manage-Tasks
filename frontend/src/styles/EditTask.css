@@ -1,0 +1,90 @@
+/* Page container */
+.login-card {
+    max-width: 480px;
+    margin: 40px auto;
+    padding: 24px 28px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Title */
+  .login-card h2 {
+    text-align: center;
+    margin-bottom: 24px;
+    color: #333;
+  }
+  
+  /* Form groups */
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+  }
+  
+  /* Labels */
+  .form-group label {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #555;
+  }
+  
+  /* Inputs, textarea, select */
+  .form-group input,
+  .form-group textarea,
+  .form-group select {
+    padding: 10px 12px;
+    font-size: 14px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+  
+  /* Textarea height */
+  .form-group textarea {
+    min-height: 80px;
+    resize: vertical;
+  }
+  
+  /* Focus state */
+  .form-group input:focus,
+  .form-group textarea:focus,
+  .form-group select:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 2px rgba(102, 126, 234, 0.2);
+  }
+  
+  /* Submit button */
+  button[type="submit"] {
+    width: 100%;
+    margin-top: 10px;
+    padding: 12px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    background: #667eea;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+  }
+  
+  /* Hover */
+  button[type="submit"]:hover {
+    background: #5a6fdc;
+  }
+  
+  /* Disabled button */
+  button[type="submit"]:disabled {
+    background: #b3baf1;
+    cursor: not-allowed;
+  }
+  
+  /* Loading text alignment */
+  p {
+    text-align: center;
+    color: #666;
+  }
+  
